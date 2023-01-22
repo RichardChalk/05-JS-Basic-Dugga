@@ -1,0 +1,54 @@
+/* A)   Använd CSS keyframes för att skapa en animation som animerar 
+        border-radius på elementet med klassen "square-ball". 
+        
+        Animationen ska börja och sluta på border-radius 100% och 
+        halvvägs in i animationen ska elementet ha 0 border-radius 
+        (och således vara helt fyrkantigt) och animationen ska ta 
+        sammanlagt 1s. 
+        
+        Animationen ska upprepa sig oändligt antal gånger. 
+        I övrigt får man ha vilken konfiguration på animationen man vill 
+        men inget mer måste tilläggas. */
+
+.square-ball {
+  margin: 10px auto;
+  height: 100px;
+  width: 100px;
+  background-color: darkolivegreen;
+  border-radius: 100%;
+
+  /* Animation rules here */
+}
+
+@keyframes squareBall {
+  0% {
+    border-radius: 100%;
+  }
+  50% {
+    border-radius: 0%;
+  }
+  100% {
+    border-radius: 100%;
+  }
+}
+
+/* B)   Skapa CSS för att byta bakgrundsfärg till rgb(241, 124, 124) 
+        på elementet med klassen "shifting-background" när man hovrar 
+        med musen över det. 
+        
+        Använd också en transition för att låta övergången till den nya 
+        bakgrundsfärgen ta 0.3s. 
+        
+        Timing function ska "ease-out" användas. 
+*/
+
+/* OBS MATTIAS: 
+        Jag förstod inte denna instruktion tyvärr!
+        "Dessutom ska din transition endast gälla om man uppdaterar 
+        värdet på background-color" */
+
+.shifting-background {
+}
+
+.shifting-background:hover {
+}

@@ -1,0 +1,60 @@
+/* A)   Använd flexbox för att få meny-rutan att se ut som på bilden flexbox.PNG. 
+        Inga html-element får läggas till utan allt ska implementeras 
+        med CSS endast. */
+
+.flex-container {
+  /* =========================== */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* =========================== */
+  width: 30%;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+/* B)   Använd grid för få elementen i grid-containern att se ut som på bilden 
+        grid.PNG. 
+        Det ska vara tre kolumner där mittenkolumnen är dubbelt så bred som 
+        sidokolumnerna. 
+        Det ska vara två lika höga rader. 
+        Det ska även vara ett mellanrum mellan raderna och kolumnerna som är 
+        5 pixlar stort. 
+        Inga html-element ska läggas till men man är fri att skapa vilka 
+        css-klasser man vill och applicera dem på vilka html-element man vill. */
+
+.side-L {
+  grid-area: sl;
+}
+
+.mid-1 {
+  grid-area: m1;
+}
+
+.mid-2 {
+  grid-area: m2;
+}
+
+.side-R {
+  grid-area: sr;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "sl m1 m1 sr"
+    "sl m2 m2 sr";
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5px;
+
+  height: 200px;
+}
+
+.grid-container div {
+  background-color: teal;
+  border-radius: 10px;
+}

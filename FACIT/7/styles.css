@@ -1,0 +1,51 @@
+/* A)   Ge varannan div i "container-a" svart bakgrundsfärg och 
+        varannan röd bakgrundsfärg */
+.container-a div:nth-child(odd){
+    background-color: black;
+}
+.container-a div:nth-child(even){
+    background-color: red;
+}
+
+/* B)   Alla p-element som har en container-b som närmsta förälder 
+        ska få en grå bakgrundsfärg. 
+        
+        p-element som har subcontainer-b som närmsta förälder 
+        ska däremot inte få någon extra styling. */
+
+.container-b > p{
+    background-color: grey;
+}
+
+/* C)   Skriv CSS som ändrar bakgrundsfärgen på subcontainer-c till grön. 
+        Inga element får läggas till i html. */
+
+.container-c .subcontainer-c.subcontainer-c{
+    background-color: green;
+}
+
+/* D)   Skriv CSS som ändrar textfärgen på länken som öppnar google 
+        i en ny flik till grön. 
+        Den andra länken ska inte få någon ny textfärg. */
+a:first-of-type{
+    color: green;
+}
+
+/*
+    CSS:en nedan får inte ändras 
+*/
+.container-a {
+    display: flex;
+    height: 100px;
+
+}
+
+.container-a div {
+    width: 10%;
+}
+
+.container-c .subcontainer-c {
+    background-color:firebrick;
+    width: 50px;
+    height: 50px;
+}

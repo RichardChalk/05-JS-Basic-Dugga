@@ -1,0 +1,1 @@
+Instruktioner finns i script.js

@@ -1,0 +1,12 @@
+.albums {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.album {
+    background-color: rgb(187, 187, 187);
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 380px;
+}

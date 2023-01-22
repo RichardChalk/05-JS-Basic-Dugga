@@ -1,0 +1,3 @@
+Skapa en styles.css-fil och skriv css så att båda div:arna blir 100x100 pixlar stora. Den ena div:en ska få en grön bakgrundsfärg och den andra blå. Dessutom ska de ligga brevid varandra (horisontellt). 
+
+Inga extra element får skapas i index.html, däremot får man lägga på hur många css-klasser man vill på de befintliga div-elementen. Det är inte heller tillåtet att lägga styling på något annat element än de två div:arna (ingen styling tillåten på body till exempel)

@@ -1,0 +1,23 @@
+.box {
+  height: 200px;
+  width: 400px;
+  background-color: lightseagreen;
+}
+
+/* A)   Skriv media queries som byter färg på elementet med klassen "box" 
+        baserat på skärmens bredd. 
+        Vilken färg som gäller vid vilken skärmstorlek finns nedan:
+        *   mindre än 400 pixlar ska färgen vara rgb(255, 0, 0)
+        *   mellan 401 och 800 pixlar ska färgen vara rgb(0, 0, 255) */
+
+@media screen and (max-width: 400px) {
+  .box {
+    background-color: rgb(255, 0, 0);
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+  .box {
+    background-color: rgb(0, 0, 255);
+  }
+}

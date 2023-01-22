@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4</title>
+  </head>
+
+  <body>
+    <form
+      action="https://http-echo-server.azurewebsites.net/api/HttpEchoDemo"
+      method="POST"
+    >
+      <label
+        >Förnamn
+        <input type="text" name="firstName" />
+      </label>
+      <br />
+      <label
+        >Efternamn
+        <input type="text" name="surName" />
+      </label>
+      <br />
+      <p>Välv Favoritfärg</p>
+      <label> <input type="radio" name="favColour" value="Green" />Grön </label>
+      <br />
+      <label> <input type="radio" name="favColour" value="Green" />Gul </label>
+      <br />
+      <label>
+        <input type="radio" name="favColour" value="Green" />Annan
+      </label>
+      <br />
+      <label
+        >Välj ett jobb:
+        <select name="job">
+          <option value="Programmerare">Systemutvecklare</option>
+          <option value="Anlaggare">Anläggare</option>
+          <option value="Pilot">Pilot</option>
+        </select>
+      </label>
+      <br /><br />
+      <label
+        >Välj en eller flera kommuner:
+        <select name="municipality" multiple>
+          <option value="wages">Hög lön</option>
+          <option value="health">Gratis friskvård</option>
+          <option value="dog">Leasing-hund</option>
+        </select>
+      </label>
+      <br />
+      <label
+        >Jag godkänner villkoren
+        <input type="checkbox" />
+      </label>
+      <br />
+
+      <div class="btn">
+        <button type="submit">Skicka</button>
+      </div>
+    </form>
+  </body>
+</html>

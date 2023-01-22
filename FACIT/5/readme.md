@@ -1,0 +1,1 @@
+1. Skapa en div-tag och i den ska du lägga en video-tag i html dokumentet med följande video: https://www.w3schools.com/tags/movie.mp4. Videon ska börja spela automatiskt och utan ljud. Video-elementet ska ha 100% höjd och 100% bredd. Bara HTML får användas. Reglagen för att pausa och spola i videon ska inte synas

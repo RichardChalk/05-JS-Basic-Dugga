@@ -1,0 +1,3 @@
+A)  Skapa ett formulär, enligt bilden formulär form.PNG. Dropdownen på "Välj ett jobb" ska innehålla tre alternativ: Systemutvecklare, Anläggare, Pilot och man ska bara kunna välja ett alternativ. "Välj en eller flera förmåner" är också en dropdown men där man kan välja flera alternativ. 
+
+B)  När man sedan klickar på "Skicka"-knappen så ska formulärdatat skickas till https://http-echo-server.azurewebsites.net/api/HttpEchoDemo
